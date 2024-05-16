@@ -716,7 +716,7 @@ func generateTokenWithExpiry(signingKey, tokenID, userID, username string, vars 
 }
 
 func generateUsername() string {
-	const usernameAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	const usernameAlphabet = "1234567890"
 	b := make([]byte, 10)
 	for i := range b {
 		b[i] = usernameAlphabet[rand.Intn(len(usernameAlphabet))]
